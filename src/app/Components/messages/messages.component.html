@@ -4,5 +4,14 @@
   <button class="clear"
           (click)="messageService.clear()">clear</button>
   <div *ngFor='let message of messageService.messages'> {{message}} </div>
-
 </div>
+
+<form (ngSubmit)="add2(mess.value)">
+  <!---->
+<div >
+  <label>add message:</label>
+  <input type="text"  name="mess1" #mess> <br>
+  <button type="submit">add</button>
+</div>
+
+</form>

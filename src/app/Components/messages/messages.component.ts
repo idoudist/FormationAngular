@@ -8,9 +8,20 @@ import { MessageService } from 'src/app/Services/message.service';
 })
 export class MessagesComponent implements OnInit {
 
+  tempMess: string;
+
   constructor(public messageService: MessageService) { }
 
   ngOnInit() {
+    this.tempMess = '';
+  }
+
+  add() {
+    this.messageService.add(this.tempMess);
+  }
+
+  add2(message: string) {
+    this.messageService.add(message);
   }
 
 }

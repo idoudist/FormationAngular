@@ -1,6 +1,12 @@
 <div>
   <h2>{{title}}</h2>
 </div>
-<app-heroes></app-heroes>
+<!--
+  <app-heroes></app-heroes>
+  -->
+  <nav>
+      <a routerLink="/heroes">Heroes</a>
+      <a routerLink="/dashboard">Dashboard</a>
+    </nav>
 <app-messages></app-messages>
 <router-outlet></router-outlet>
